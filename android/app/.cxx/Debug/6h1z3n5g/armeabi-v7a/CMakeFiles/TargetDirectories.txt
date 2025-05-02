@@ -1,0 +1,2 @@
+D:/project/fitgym/android/app/.cxx/Debug/6h1z3n5g/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/project/fitgym/android/app/.cxx/Debug/6h1z3n5g/armeabi-v7a/CMakeFiles/rebuild_cache.dir

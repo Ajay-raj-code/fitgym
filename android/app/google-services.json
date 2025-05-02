@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663846967433",
+    "firebase_url": "https://fitgym-e1c66-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fitgym-e1c66",
+    "storage_bucket": "fitgym-e1c66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663846967433:android:e68274c542a09c58eb8e58",
+        "android_client_info": {
+          "package_name": "com.disgle.fitgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663846967433-bv8n3nfoiosfc1threje78krff9r6ugn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.disgle.fitgym",
+            "certificate_hash": "f900de4a3b6f5a6206c16ce01f8aa210fc21ed36"
+          }
+        },
+        {
+          "client_id": "663846967433-fd76al535ve976vd60g5vorpv3pl5v2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrqLIb92FZ9K0y2djF6RFr-ZL1wV2iaQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663846967433-fd76al535ve976vd60g5vorpv3pl5v2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
