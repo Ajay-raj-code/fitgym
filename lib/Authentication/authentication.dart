@@ -1,4 +1,5 @@
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -70,12 +71,9 @@ class AuthMethods{
       return true;
     } on FirebaseAuthException catch (e){
       if(e.code == 'email-already-in-use'){
-        print("User already exists with this email");
-      }else {
-        print("Registration Failed: ${e.message}");
 
+      }else {
       }
-      print("message $e");
       return false;
     }
   }
@@ -83,13 +81,12 @@ class AuthMethods{
 
   Future<bool> loginWithEmail(String email, String password) async {
     try {
-      UserCredential userCredential = await _auth.signInWithEmailAndPassword(
+      await _auth.signInWithEmailAndPassword(
         email: email.toLowerCase(),
         password: password,
       );
       return true;
     } on FirebaseAuthException catch (e) {
-      print("Login Error: ${e.code}");
       return false;
     }
   }
@@ -98,4 +95,13 @@ class AuthMethods{
   Future<void> signOut() async {
     await _auth.signOut();
   }
+}
+Future<Map<String, String>> getAppSettings() async {
+  final doc = await FirebaseFirestore.instance
+      .collection('Document')
+      .doc('appSettings')
+      .get();
+
+  Map<String, String> result = {'version': doc.data()!['app_version'].toString(), 'update_url': doc.data()!['update_url'].toString() };
+  return result;
 }

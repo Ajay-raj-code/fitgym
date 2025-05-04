@@ -27,6 +27,7 @@ class GlobalDataManagementController extends GetxController{
   List<Map<String, dynamic>> extraImage=<Map<String, dynamic>>[ ].obs;
   List<Map<String, dynamic>> exercisePlanCategory = <Map<String, dynamic>>[ ].obs;
   List<Map<String, dynamic>> exercisePlanList = <Map<String, dynamic>>[ ].obs;
+  Map<String, String> appSettings = {};
   Directory? appDirectory;
 
 
